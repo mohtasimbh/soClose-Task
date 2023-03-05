@@ -1,0 +1,48 @@
+class Assets {
+  Assets._();
+  static const String fontAirbnbCerealWBd = 'assets/font/AirbnbCereal_W_Bd.otf';
+  static const String iconsBackIc = 'assets/icons/back_ic.png';
+  static const String iconsBagIc = 'assets/icons/bag_ic.png';
+  static const String iconsCartIc = 'assets/icons/cart_ic.png';
+  static const String iconsFavouriteIc = 'assets/icons/favourite_ic.png';
+  static const String iconsHomeIc = 'assets/icons/home_ic.png';
+  static const String iconsLocationIc = 'assets/icons/location_ic.png';
+  static const String iconsMenuIc = 'assets/icons/menu_ic.png';
+  static const String iconsNotifyIc = 'assets/icons/notify_ic.png';
+  static const String iconsSearchIc = 'assets/icons/search_ic.png';
+  static const String iconsUserIc = 'assets/icons/user_ic.png';
+  static const String imagesBottomnavBg = 'assets/images/bottomnav_bg.png';
+  static const String imagesRotate = 'assets/images/rotate.png';
+  static const String imagesSplashBg = 'assets/images/splash_bg.jpg';
+  static const String logosAdidasLogo = 'assets/logos/adidas_logo.png';
+  static const String logosConverseLogo = 'assets/logos/converse_logo.png';
+  static const String logosNikeLogo = 'assets/logos/nike_logo.png';
+  static const String logosPumaLogo = 'assets/logos/puma_logo.png';
+  static const String logosUnderArmourLogo = 'assets/logos/under_armour_logo.png';
+  static const String showsImg1 = 'assets/shows/img1.png';
+  static const String showsImg2 = 'assets/shows/img2.png';
+  static const String showsImg3 = 'assets/shows/img3.png';
+  static const String showsS1 = 'assets/shows/s1.png';
+  static const String showsS10 = 'assets/shows/s10.png';
+  static const String showsS11 = 'assets/shows/s11.png';
+  static const String showsS12 = 'assets/shows/s12.png';
+  static const String showsS13 = 'assets/shows/s13.png';
+  static const String showsS14 = 'assets/shows/s14.png';
+  static const String showsS15 = 'assets/shows/s15.png';
+  static const String showsS16 = 'assets/shows/s16.png';
+  static const String showsS17 = 'assets/shows/s17.png';
+  static const String showsS18 = 'assets/shows/s18.png';
+  static const String showsS19 = 'assets/shows/s19.png';
+  static const String showsS2 = 'assets/shows/s2.png';
+  static const String showsS20 = 'assets/shows/s20.png';
+  static const String showsS21 = 'assets/shows/s21.png';
+  static const String showsS22 = 'assets/shows/s22.png';
+  static const String showsS3 = 'assets/shows/s3.png';
+  static const String showsS4 = 'assets/shows/s4.png';
+  static const String showsS5 = 'assets/shows/s5.png';
+  static const String showsS6 = 'assets/shows/s6.png';
+  static const String showsS7 = 'assets/shows/s7.png';
+  static const String showsS8 = 'assets/shows/s8.png';
+  static const String showsS9 = 'assets/shows/s9.png';
+
+}
