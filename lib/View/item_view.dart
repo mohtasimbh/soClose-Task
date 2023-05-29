@@ -75,7 +75,7 @@ class _ItemViewState extends State<ItemView> {
                                 height: 5.0,
                               ),
                               Text(
-                                "\$ 493.00",
+                                "3500Ksh",
                                 style: textStyle4,
                               ),
                             ],

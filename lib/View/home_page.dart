@@ -40,6 +40,16 @@ class _HomePageState extends State<HomePage> {
             children: [
               SizedBox(
                 height: 55,
+                child: Container(
+                  decoration:const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/logo.png"
+                      ))
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 55,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -71,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                             const SizedBox(
                               width: 5.0,
                             ),
-                            Text("Mondolibug, Sylhet", style: textStyle2),
+                            Text("Mfangano Street,\nSunbeam shopping complex ", style: textStyle2),
                           ],
                         )
                       ],
@@ -158,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Popular Shows",
+                            "Popular Shoes",
                             style: textStyle4,
                           ),
                           TextButton(
@@ -236,7 +246,7 @@ class _HomePageState extends State<HomePage> {
                                               height: 10,
                                             ),
                                             Text(
-                                              "\$ 849.69",
+                                              "3500 Ksh",
                                               style: textStyle4,
                                             ),
                                           ],

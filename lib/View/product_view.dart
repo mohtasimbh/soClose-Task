@@ -113,7 +113,7 @@ class _ProductViewState extends State<ProductView> {
                           height: 5.0,
                         ),
                         Text(
-                          "\$ 967.800",
+                          "3500 Ksh",
                           style: textStyle4,
                         ),
                         const SizedBox(
@@ -402,7 +402,7 @@ class _ProductViewState extends State<ProductView> {
                     style: textStyle1,
                   ),
                   Text(
-                    "\$ 849.96",
+                    "3500 Ksh",
                     style: textStyle4,
                   ),
                 ],

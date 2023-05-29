@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182709917285",
+    "project_id": "goodtimes-fashion",
+    "storage_bucket": "goodtimes-fashion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182709917285:android:b8caf7934603002c41988c",
+        "android_client_info": {
+          "package_name": "com.sajibhasan.oxyboot.oxy_boot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182709917285-imajup228lb5nbkab45b9j8pd7ke6mqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd6_34Us2VbgW0WpDzgEdZWH-_aCHbBAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182709917285-imajup228lb5nbkab45b9j8pd7ke6mqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -54,18 +54,18 @@ class MenuScreen extends StatelessWidget {
                         height: 60,
                         width: 60,
                         decoration: BoxDecoration(
-                            color: const Color(0xffDFEFFF),
+                            color:const Color.fromARGB(255, 95, 110, 124),
                             borderRadius: BorderRadius.circular(70)),
                       ),
                     ),
                     Positioned(
-                        top: 5,
+                        top: 2,
                         left: 18,
                         child: SizedBox(
-                          height: 57,
-                          width: 57,
+                          height: 52,
+                          width: 52,
                           child: Image.asset(
-                            'assets/images/profile.png',
+                            'assets/images/icons8-person-48.png',
                             fit: BoxFit.contain,
                           ),
                         )),
@@ -83,7 +83,7 @@ class MenuScreen extends StatelessWidget {
                         bottom: 0,
                         left: 5,
                         child: Text(
-                          'Alisson becker',
+                          'Boss Njugush',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 24,

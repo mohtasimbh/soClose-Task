@@ -37,9 +37,9 @@ class _SplashScreenState extends State<SplashScreen> {
             height: double.infinity,
             child: Center(
               child: Text(
-                "OXY BOOTS",
+                "Good Times \n     Fashion",
                 style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 245, 245, 10),
                     fontFamily: "airbnb",
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold),
