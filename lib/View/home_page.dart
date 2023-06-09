@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bounce/flutter_bounce.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 import 'package:oxy_boot/Styles/font_styles.dart';
+import 'package:oxy_boot/Widgets/ProductCard.dart';
 import 'package:oxy_boot/View/card_screen.dart';
 import 'package:oxy_boot/View/favourite_screen.dart';
 import 'package:oxy_boot/View/notifications_screen.dart';
 import 'package:oxy_boot/View/profile.dart';
 import '../Styles/color.dart';
-import 'brands.dart';
-import 'item_view.dart';
+import '../Widgets/brands.dart';
+import '../Widgets/item_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -210,60 +211,8 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                       Column(
-                        children: [
-                          for (int i = 0; i < 5; i++)
-                            Padding(
-                              padding: const EdgeInsets.only(bottom: 5.0),
-                              child: InkWell(
-                                onTap: () {},
-                                child: Container(
-                                  width: double.infinity,
-                                  height: 120,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(16.0),
-                                      color: Colors.white),
-                                  child: Row(
-                                    children: [
-                                      Expanded(
-                                          child: Padding(
-                                        padding: const EdgeInsets.all(20.0),
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "BEST CHOISE",
-                                              style: textStyle6,
-                                            ),
-                                            const SizedBox(
-                                              height: 5,
-                                            ),
-                                            Text(
-                                              "Nike Air Jordan",
-                                              style: textStyle4,
-                                            ),
-                                            const SizedBox(
-                                              height: 10,
-                                            ),
-                                            Text(
-                                              "3500 Ksh",
-                                              style: textStyle4,
-                                            ),
-                                          ],
-                                        ),
-                                      )),
-                                      Expanded(
-                                          child: Image.asset(
-                                        "assets/shows/img1.png",
-                                        width: double.infinity,
-                                        height: double.infinity,
-                                        fit: BoxFit.cover,
-                                      )),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            )
+                        children: const [
+                          ProductList()
                         ],
                       )
                     ],
@@ -285,7 +234,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const CartScreen()),
+                MaterialPageRoute(builder: (context) => CartScreen()),
               );
             },
             backgroundColor: customBlue,

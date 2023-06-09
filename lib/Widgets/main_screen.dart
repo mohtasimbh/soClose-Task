@@ -47,7 +47,7 @@ class _MainScreenState extends State<MainScreen> {
       case MenuItems.profile:
         return const ProfileScreen();
       case MenuItems.cart:
-        return const CartScreen();
+        return CartScreen();
       case MenuItems.favourite:
         return const FavouriteScreen();
       case MenuItems.notification:
