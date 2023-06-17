@@ -13,6 +13,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return     Padding(
+                 
                               padding: const EdgeInsets.only(bottom: 5.0),
                               child: InkWell(
                                 onTap: () {
@@ -60,7 +61,7 @@ class ProductCard extends StatelessWidget {
                                         Product.products[index].PImage,
                                         width: double.infinity,
                                         height: double.infinity,
-                                        fit: BoxFit.cover,
+                                        fit: BoxFit.contain,
                                       )),
                                     ],
                                   ),
@@ -76,7 +77,7 @@ class ProductList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(child: ListView.builder(
+    return Expanded(child: ListView.builder(
       itemCount: Product.products.length,
       itemBuilder: (BuildContext context,int index) {
       return ProductCard(index: index,);
