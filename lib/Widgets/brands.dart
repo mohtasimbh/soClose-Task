@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bounce/flutter_bounce.dart';
+import 'package:oxy_boot/View/Accesories.dart';
+import 'package:oxy_boot/Widgets/prodouct.dart';
 
 import '../Styles/color.dart';
 import '../Styles/font_styles.dart';
@@ -35,7 +37,7 @@ class _BrandsState extends State<Brands> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 45, right: 10),
                   child: Text(
-                    "Nike",
+                    "Shoes",
                     style: textStyle3,
                   ),
                 ),
@@ -45,12 +47,18 @@ class _BrandsState extends State<Brands> {
               padding: const EdgeInsets.all(5.0),
               child: Bounce(
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ECommerceScreen(),
+                    ),
+                  );
                   currentIndex = 0;
                   setState(() {});
                 },
                 duration: const Duration(milliseconds: 200),
                 child: Image.asset(
-                  "assets/logos/nike_logo.png",
+                  "assets/icons/sport-shoe.png",
                   width: currentIndex == 0 ? 34.0 : 44.0,
                   height: currentIndex == 0 ? 34.0 : 44.0,
                 ),
@@ -74,7 +82,7 @@ class _BrandsState extends State<Brands> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 45, right: 10),
                   child: Text(
-                    "Puma",
+                    "Tshirt",
                     style: textStyle3,
                   ),
                 ),
@@ -84,12 +92,18 @@ class _BrandsState extends State<Brands> {
               padding: const EdgeInsets.all(5.0),
               child: Bounce(
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const AccesoriesPage(),
+                    ),
+                  );
                   currentIndex = 1;
                   setState(() {});
                 },
                 duration: const Duration(milliseconds: 200),
                 child: Image.asset(
-                  "assets/logos/puma_logo.png",
+                  "assets/icons/tshirt.png",
                   width: currentIndex == 1 ? 34.0 : 44.0,
                   height: currentIndex == 1 ? 34.0 : 44.0,
                 ),
@@ -113,7 +127,7 @@ class _BrandsState extends State<Brands> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 45, right: 10),
                   child: Text(
-                    "Under",
+                    "Pants",
                     style: textStyle3,
                   ),
                 ),
@@ -128,7 +142,7 @@ class _BrandsState extends State<Brands> {
                 },
                 duration: const Duration(milliseconds: 200),
                 child: Image.asset(
-                  "assets/logos/under_armour_logo.png",
+                  "assets/icons/trouser.png",
                   width: currentIndex == 2 ? 34.0 : 44.0,
                   height: currentIndex == 2 ? 34.0 : 44.0,
                 ),
@@ -152,7 +166,7 @@ class _BrandsState extends State<Brands> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 45, right: 10),
                   child: Text(
-                    "Adidas",
+                    "Jacket",
                     style: textStyle3,
                   ),
                 ),
@@ -167,7 +181,7 @@ class _BrandsState extends State<Brands> {
                 },
                 duration: const Duration(milliseconds: 200),
                 child: Image.asset(
-                  "assets/logos/adidas_logo.png",
+                  "assets/icons/jacket.png",
                   width: currentIndex == 3 ? 34.0 : 44.0,
                   height: currentIndex == 3 ? 34.0 : 44.0,
                 ),
@@ -191,7 +205,7 @@ class _BrandsState extends State<Brands> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 45, right: 10),
                   child: Text(
-                    "Converse",
+                    "Accessories",
                     style: textStyle3,
                   ),
                 ),
@@ -206,7 +220,7 @@ class _BrandsState extends State<Brands> {
                 },
                 duration: const Duration(milliseconds: 200),
                 child: Image.asset(
-                  "assets/logos/converse_logo.png",
+                  "assets/icons/belt.png",
                   width: currentIndex == 4 ? 34.0 : 44.0,
                   height: currentIndex == 4 ? 34.0 : 44.0,
                 ),

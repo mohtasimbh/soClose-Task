@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         color: bgWhite,
         child: Padding(
-          padding: const EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
+          padding: const EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0),
           child: Column(
             children: [
               SizedBox(
@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
                             fillColor: Colors.white,
                             filled: true,
                             contentPadding: EdgeInsets.zero,
-                            hintText: "Looking for shoes",
+                            hintText: "Search Product,Cartegory",
                             prefixIcon: Padding(
                               padding: const EdgeInsets.all(15.0),
                               child: Image.asset("assets/icons/search_ic.png"),
@@ -220,11 +220,12 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Column(
                         children: [
-                           for (int index = 0; index < Product.products.length; index++)
+                          for (int index = 0;
+                              index < Product.products.length;
+                              index++)
                             ProductCard(index: index),
                         ],
                       )
-                    
                     ],
                   ),
                 ),
