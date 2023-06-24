@@ -85,14 +85,14 @@ class RowCardCart extends StatelessWidget {
         Row(
           children: [
             IconButton(
-              onPressed: () =>
-                  controller.removeProduct(product),
+              onPressed: () {},
+                 // controller.removeProduct(product),
               icon: Icon(Icons.remove),
             ),
             Text(quantity.toString()),
             IconButton(
-              onPressed: () =>
-                  controller.addProduct(product),
+              onPressed: () {},
+                //  controller.addProduct(product),
               icon: Icon(Icons.add),
             ),
           ],
