@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bounce/flutter_bounce.dart';
-import 'package:oxy_boot/View/Accesories.dart';
+import 'package:oxy_boot/View/CAtegoryPages/Accesories.dart';
 import 'package:oxy_boot/Widgets/prodouct.dart';
 
 import '../Styles/color.dart';
