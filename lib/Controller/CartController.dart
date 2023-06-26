@@ -1,10 +1,9 @@
 import "package:get/get.dart";
-
+import 'package:flutter/material.dart';
 import '../DataModel/Product.dart';
 
 class CartController extends GetxController {
-
-  final CartController instance = Get.find();
+  static CartController instance = Get.find();
   // Add a dict to store the products in the cart.
   var _products = {}.obs;
 
@@ -32,8 +31,8 @@ class CartController extends GetxController {
   }
 
   void deleteProduct(Product product) {
-  _products.remove(product);
-}
+    _products.remove(product);
+  }
 
   get products => _products;
 
@@ -46,4 +45,21 @@ class CartController extends GetxController {
       .toList()
       .reduce((value, element) => value + element)
       .toStringAsFixed(2);
+
+  // void total() {
+  //   _products.entries
+  //       .map((product) => product.key.price * product.value)
+  //       .toList()
+  //       .reduce((value, element) => value + element)
+  //       .toStringAsFixed(2);
+  // }
+
+  void transactionCompleted() {
+    products.clear();
+    Get.back();
+    Get.snackbar("Message", "Transaction succeed ! ",
+        colorText: Colors.white,
+        backgroundColor: Color(0xff4D4D4D),
+        snackPosition: SnackPosition.BOTTOM);
+  }
 }

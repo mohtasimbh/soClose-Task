@@ -12,12 +12,12 @@ class CartProducts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     final repo = Get.put(CartController());
+    final repo = Get.put(CartController());
     return Obx(
       () => SizedBox(
         height: 600,
         child: ListView.builder(
-            itemCount:controller.products.length,
+            itemCount: controller.products.length,
             itemBuilder: (BuildContext context, int index) {
               return RowCardCart(
                 controller: controller,
@@ -31,13 +31,17 @@ class CartProducts extends StatelessWidget {
   }
 }
 
-
 class RowCardCart extends StatelessWidget {
   final CartController controller;
   final Product product;
   final int quantity;
   final int index;
-  const RowCardCart({super.key, required this.controller, required this.product, required this.quantity, required this.index});
+  const RowCardCart(
+      {super.key,
+      required this.controller,
+      required this.product,
+      required this.quantity,
+      required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -72,33 +76,40 @@ class RowCardCart extends StatelessWidget {
                   Product.products[index].Price.toString(),
                 ),
                 const SizedBox(height: 10.0),
-                Expanded(child:Row(
-      children: [
-        ElevatedButton.icon(
-          icon: Icon(Icons.delete),
-          style: ElevatedButton.styleFrom(
-            primary: Colors.red,
-          ),
-          onPressed: () { controller.deleteProduct(product);},
-          label: Text("Remove"),
-        ),
-        Row(
-          children: [
-            IconButton(
-              onPressed: () {},
-                 // controller.removeProduct(product),
-              icon: Icon(Icons.remove),
-            ),
-            Text(quantity.toString()),
-            IconButton(
-              onPressed: () {},
-                //  controller.addProduct(product),
-              icon: Icon(Icons.add),
-            ),
-          ],
-        )
-      ],
-    )),
+                Expanded(
+                    child: Row(
+                  children: [
+                    ElevatedButton.icon(
+                      icon: Icon(Icons.delete),
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.red,
+                      ),
+                      onPressed: () {
+                        controller.deleteProduct(product);
+                      },
+                      label: Text("Remove"),
+                    ),
+                    Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            controller.removeProduct(product);
+                          },
+                          // controller.removeProduct(product),
+                          icon: Icon(Icons.remove),
+                        ),
+                        Text(quantity.toString()),
+                        IconButton(
+                          onPressed: () {
+                            controller.addProduct(product);
+                          },
+                          //  controller.addProduct(product),
+                          icon: Icon(Icons.add),
+                        ),
+                      ],
+                    )
+                  ],
+                )),
               ],
             ),
           ),

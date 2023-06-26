@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:oxy_boot/Widgets/CartTotal.dart';
+import 'package:oxy_boot/Widgets/RowCart.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: const Color(0xffF8F9FA),
+        backgroundColor: const Color(0xffffffff),
         body: Column(children: [
           const SizedBox(
             height: 50,
@@ -58,7 +60,9 @@ class _CartScreenState extends State<CartScreen> {
               ],
             ),
           ),
+          Expanded(
+            child: CartProducts(),
+          ),
         ]));
   }
 }
-
