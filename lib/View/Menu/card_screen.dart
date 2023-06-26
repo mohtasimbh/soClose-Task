@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oxy_boot/Widgets/CartTotal.dart';
+
 import 'package:oxy_boot/Widgets/RowCart.dart';
 
 class CartScreen extends StatefulWidget {
@@ -63,6 +64,7 @@ class _CartScreenState extends State<CartScreen> {
           Expanded(
             child: CartProducts(),
           ),
+          CartTotal()
         ]));
   }
 }
